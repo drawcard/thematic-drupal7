@@ -7,7 +7,11 @@ Thematic + Drupal7 + Zen (as a subtheme)
  * verify that Zen is installed to: ```/your-drupal-site/sites/all/themes/zen```
 * Remove the accompanying starter theme folder: ```cd /your-drupal-site/sites/all/themes/zen && rm -rf STARTERKIT/```
 * Install thematic-drupal7: 
-```cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name && cd your-theme-name```
+```
+cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
+git submodule update --init --recursive
+cd your-theme-name 
+```
 [] Activate the theme in Drupal 7:
  * Set up the info file: ```mv STARTERKIT.info.txt your-theme-name.info```
  * Edit the info file accordingly to title your theme, and configure other important settings
