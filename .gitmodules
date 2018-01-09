@@ -1,6 +1,0 @@
-[submodule "tachyons"]
-	path = tachyons
-	url = https://github.com/tachyons-css/tachyons.git
-[submodule "flexboxgrid"]
-	path = flexboxgrid
-	url = https://github.com/kristoferjoseph/flexboxgrid
