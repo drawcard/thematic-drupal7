@@ -1,0 +1,3 @@
+[submodule "thematic"]
+	path = thematic
+	url = https://github.com/drawcard/thematic
