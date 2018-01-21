@@ -58,7 +58,7 @@ stylesheets[all][] = node.css
 
 ; Theme resets
 stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
-stylesheets[all][] = thematic/extra/css/zen-defaults.css
+stylesheets[all][] = css/zen-defaults.css
 
 ; Helper classes
 stylesheets[all][] = thematic/extra/helpers.css
