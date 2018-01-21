@@ -77,6 +77,8 @@ stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
 ; PROJECT-SPECIFIC CSS 
 ; --------------------
 
+; ---- Webfonts
+; stylesheets[all][] = fonts/path-to-css-stylesheet
 ; ---- Global styles
 stylesheets[all][] = thematic/base.css
 ; ---- Theme specific styles
