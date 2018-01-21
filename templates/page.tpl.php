@@ -17,49 +17,13 @@
     <?php endif; ?>
     </div>
 
-    <div class="col-xs-5">
-          <?php if ($main_menu): ?>
-        <nav class="main-menu" role="navigation">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see https://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('navbar', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('visually-hidden'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
+    <nav id="nav-1st" class="nav-1st col-xs-8">
+        <?php print render($page['nav-1st']); ?>
+    </nav>
 
-      <?php print render($page['navigation']); ?>
-    </div>
-
-    <div class="col-xs-5">
-
-    <?php if ($secondary_menu): ?>
-      <nav class="header__secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => $secondary_menu_heading,
-            'level' => 'h2',
-            'class' => array('visually-hidden'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
-    </div>
+    <nav id="nav-2nd" class="nav-2nd col-xs-2">
+        <?php print render($page['nav-2nd']); ?>
+    </nav>
 
     <?php print render($page['header']); ?>
 
