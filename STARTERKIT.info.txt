@@ -44,6 +44,10 @@ base theme  = zen
 ; CSS2.1 media types: http://www.w3.org/TR/CSS21/media.html#media-types
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
 
+; -----------------
+; SETUP STYLESHEETS 
+; -----------------
+
 ; First we remove any Drupal styling that Zen provides as components.
 stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
@@ -54,18 +58,24 @@ stylesheets[all][] = node.css
 
 ; Theme resets
 stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
+stylesheets[all][] = thematic/extra/css/zen-defaults.css
+
+; Helper classes
 stylesheets[all][] = thematic/extra/helpers.css
 
 ; Print stylesheet
 stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
 
-; Theme frameworks
+; --------------
+; CSS FRAMEWORKS
+; --------------
+
 stylesheets[all][] = thematic/node_modules/tachyons/css/tachyons.css
 stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
 
-; --------------------------------
-; Then we add our own stylesheets.
-; --------------------------------
+; --------------------
+; PROJECT-SPECIFIC CSS 
+; --------------------
 
 ; ---- Global styles
 stylesheets[all][] = thematic/base.css
