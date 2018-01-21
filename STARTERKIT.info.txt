@@ -52,7 +52,24 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = comment.css
 stylesheets[all][] = node.css
 
-; Then we add our own stylesheet.
+; Theme resets
+stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
+stylesheets[all][] = thematic/extra/helpers.css
+
+; Print stylesheet
+stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
+
+; Theme frameworks
+stylesheets[all][] = thematic/node_modules/tachyons/css/tachyons.css
+stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
+
+; --------------------------------
+; Then we add our own stylesheets.
+; --------------------------------
+
+; ---- Global styles
+stylesheets[all][] = thematic/base.css
+; ---- Theme specific styles
 stylesheets[all][] = css/styles.css
 
 ; If you wish to use conditional stylesheets, you should install the
