@@ -72,29 +72,45 @@ stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
 
 stylesheets[all][] = thematic/node_modules/tachyons/css/tachyons.css
 stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
+stylesheets[all][] = thematic/node_modules/uikit/dist/css/uikit.min.css
 
 ; --------------------
 ; PROJECT-SPECIFIC CSS 
 ; --------------------
 
-; ---- Webfonts
+; ---- WEBFONTS
 ; stylesheets[all][] = fonts/path-to-css-stylesheet
-; ---- Global styles
+
+; ---- GLOBAL STYLES
 stylesheets[all][] = thematic/base.css
-; ---- Theme specific styles
+
+; ---- THEME SPECIFIC STYLES
 stylesheets[all][] = css/styles.css
+
+; ------------------
+; IE CONDITIONAL CSS
+; ------------------
 
 ; If you wish to use conditional stylesheets, you should install the
 ; conditional stylesheets module: https://drupal.org/project/conditional_styles
 ;
-;stylesheets-conditional[lte IE 8][all][] = css/ie8.css
-;stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
+; stylesheets-conditional[lte IE 8][all][] = css/ie8.css
+; stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
 
 
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+; ----------
+; FRAMEWORKS
+; ----------
+scripts[] = node_modules/uikit/dist/js/uikit.min.js
+scripts[] = node_modules/uikit/dist/js/uikit-icons.min.js
+
+; -------------------
+; PROJECT-SPECIFIC JS 
+; -------------------
+; scripts[] = js/script.js
 
 
 
