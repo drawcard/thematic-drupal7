@@ -104,8 +104,8 @@ stylesheets[all][] = css/styles.css
 ; ----------
 ; FRAMEWORKS
 ; ----------
-scripts[] = node_modules/uikit/dist/js/uikit.min.js
-scripts[] = node_modules/uikit/dist/js/uikit-icons.min.js
+scripts[] = thematic/node_modules/uikit/dist/js/uikit.min.js
+scripts[] = thematic/node_modules/uikit/dist/js/uikit-icons.min.js
 
 ; -------------------
 ; PROJECT-SPECIFIC JS 
