@@ -118,7 +118,7 @@
 
 li:hover > a .sf-sub-indicator,
 li.sfHover > a .sf-sub-indicator {
-	background-position: -10px -100px;
+	background-position: 0px -100px;
 }
 
 /* point right for anchors in subs */
@@ -127,7 +127,7 @@ li.sfHover > a .sf-sub-indicator {
 }
 .sf-menu ul li:hover > a .sf-sub-indicator,
 .sf-menu ul li.sfHover > a .sf-sub-indicator {
-	background-position: -10px 0;
+	background-position: 0px 0px;
 }
 .sf-hidden {
     display:none !important;
