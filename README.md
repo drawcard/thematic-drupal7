@@ -32,3 +32,12 @@ In terminal:
 drush en superfish ace-editor
 # If prompted to install modules, select Yes
 ```
+[] Module Setup
+### After installation
+* Go to /admin/people/permissions and allow all module settings pages for SuperAdmin & Administrator
+
+### Ace Editor
+* Go to /admin/config/content/ace-editor
+* Set theme to "Tomorrow Night Bright"
+* Set font size to 10pt
+* Save Changes
