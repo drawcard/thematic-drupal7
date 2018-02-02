@@ -7,7 +7,7 @@ Thematic + Drupal7 + Zen (as a subtheme)
  * verify that Zen is installed to: ```/your-drupal-site/sites/all/themes/zen```
 * Remove the accompanying starter theme folder: ```cd /your-drupal-site/sites/all/themes/zen && rm -rf STARTERKIT/```
 * Install thematic-drupal7: 
-```
+```bash
 cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
 git submodule update --init --recursive
 cd your-theme-name 
@@ -18,3 +18,17 @@ cd your-theme-name
  * Go to ```https://your-drupal-site.dev/admin``` and log in
  * Go to ```Appearance``` and activate your sub-theme
  
+[] Install required libraries
+In terminal:
+```bash
+cd /your-drupal-site/sites/all/libraries
+git clone https://github.com/mehrpadin/Superfish-for-Drupal superfish
+git clone https://github.com/ajaxorg/ace-builds/ ace
+```
+
+[] Enable required modules
+In terminal:
+```bash
+drush en superfish ace-editor
+# If prompted to install modules, select Yes
+```

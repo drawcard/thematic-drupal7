@@ -84,6 +84,11 @@ stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
 ; ---- GLOBAL STYLES
 stylesheets[all][] = thematic/base.css
 
+; ---- SUPERFISH MENU STYLES
+; ---- Requires 'superfish' module downloaded & enabled
+; ---- https://www.drupal.org/project/superfish
+stylesheets[all][] = css/superfish.css
+
 ; ---- THEME SPECIFIC STYLES
 stylesheets[all][] = css/styles.css
 
