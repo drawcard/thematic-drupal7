@@ -38,6 +38,5 @@ drush en superfish ace-editor
 
 ### Ace Editor
 * Go to /admin/config/content/ace-editor
-* Set theme to "Tomorrow Night Bright"
 * Set font size to 10pt
 * Save Changes
