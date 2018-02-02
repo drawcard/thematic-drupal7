@@ -47,28 +47,43 @@
 	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
 }
 .sf-menu a {
-	border-left: 1px solid #fff;
-	border-top: 1px solid rgb(241, 241, 241); /* fallback colour must use full shorthand */
-	border-top: 1px solid rgba(255,255,255,.5);
+	/* border-left: 1px solid #fff; */
+	/* border-top: 1px solid rgb(241, 241, 241); */ /* fallback colour must use full shorthand */
+	/* border-top: 1px solid rgba(255,255,255,.5); */
 	padding: .75em 1em;
 	text-decoration:none;
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: rgb(49, 49, 49);
+	color: #333;
 }
 .sf-menu li {
+    /* Top / 1st level items */
 	background: none transparent;
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
+.sf-menu .sf-depth-1 > a {
+    /* Top / 1st level link text */
+	font-weight: bold;
+}
 .sf-menu ul li {
+    /* 2nd level items */
 	background: #FFF;
 }
+.sf-menu ul li > a {
+    /* 2nd level link text */
+	font-size: 0.8rem;
+}
 .sf-menu ul ul li {
+    /* 3rd level items */
 	background :#FFF;
+}
+.sf-menu ul ul li > a {
+    /* 3rd level link text */
+	font-size: 0.8rem;
 }
 .sf-menu li:hover,
 .sf-menu li.sfHover {
