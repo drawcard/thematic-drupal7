@@ -99,6 +99,7 @@
 	min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
+    /* All arrow indicators */
 	position: absolute;
 	display: block;
 	right: .75em;
@@ -107,7 +108,12 @@
 	height: 10px;
 	text-indent: -999em;
 	overflow: hidden;
-	background: url(../images/superfish/sf-arrow-medium.svg) no-repeat 0 -100px;
+	background: url(../images/superfish/sf-arrow-thick.svg) no-repeat 0px 2px;
+}
+.sf-menu .sf-depth-1 > .sf-sub-indicator {
+    /* Styling for top level indicators */
+    transform: rotate(90deg);
+    background: url(../images/superfish/sf-arrow-thick.svg) no-repeat 2px -1px;
 }
 
 li:hover > a .sf-sub-indicator,
