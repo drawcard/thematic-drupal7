@@ -44,11 +44,16 @@ base theme  = zen
 ; CSS2.1 media types: http://www.w3.org/TR/CSS21/media.html#media-types
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; CSS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ; -----------------
 ; SETUP STYLESHEETS 
 ; -----------------
 
 ; First we remove any Drupal styling that Zen provides as components.
+
 stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
@@ -64,31 +69,34 @@ stylesheets[all][] = node.css
 stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
 stylesheets[all][] = css/zen-defaults.css
 
-; Helper classes
-stylesheets[all][] = thematic/extra/helpers.css
-
 ; Print stylesheet
 stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
 
 ; UIKit
 stylesheets[all][] = thematic/node_modules/uikit/dist/css/uikit.min.css
 
+; Project Clarity Icon Set
+stylesheets[all][] = thematic/node_modules/@clr/icons/clr-icons.min.css
+
+; Helper classes
+stylesheets[all][] = thematic/extra/helpers.css
+
 ; --------------------
 ; PROJECT-SPECIFIC CSS 
 ; --------------------
 
-; ---- WEBFONTS
+; WEBFONTS
 ; stylesheets[all][] = fonts/path-to-css-stylesheet
 
-; ---- GLOBAL STYLES
+; GLOBAL STYLES
 stylesheets[all][] = thematic/base.css
 
-; ---- SUPERFISH MENU STYLES
-; ---- Requires 'superfish' module downloaded & enabled
-; ---- https://www.drupal.org/project/superfish
+; SUPERFISH MENU STYLES
+; Requires 'superfish' module downloaded & enabled
+; https://www.drupal.org/project/superfish
 stylesheets[all][] = css/superfish.css
 
-; ---- THEME SPECIFIC STYLES
+; THEME SPECIFIC STYLES
 stylesheets[all][] = css/styles.css
 
 ; ------------------
@@ -101,13 +109,19 @@ stylesheets[all][] = css/styles.css
 ; stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 ; stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; JS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+; ------------
+; JS LIBRARIES
+; ------------
 
-; Optionally add some JavaScripts to your theme.
+; Project Clarity Icon Set
+scripts[] = thematic/node_modules/@webcomponents/custom-elements/custom-elements.min.js
+scripts[] = thematic/node_modules/@clr/icons/clr-icons.min.js
 
-; ----------
-; FRAMEWORKS
-; ----------
+; UIKit
 scripts[] = thematic/node_modules/uikit/dist/js/uikit.min.js
 scripts[] = thematic/node_modules/uikit/dist/js/uikit-icons.min.js
 
@@ -115,7 +129,6 @@ scripts[] = thematic/node_modules/uikit/dist/js/uikit-icons.min.js
 ; PROJECT-SPECIFIC JS 
 ; -------------------
 ; scripts[] = js/script.js
-
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
