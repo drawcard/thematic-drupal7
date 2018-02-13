@@ -56,6 +56,10 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = comment.css
 stylesheets[all][] = node.css
 
+; -------------
+; CSS LIBRARIES
+; -------------
+
 ; Theme resets
 stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
 stylesheets[all][] = css/zen-defaults.css
@@ -66,13 +70,8 @@ stylesheets[all][] = thematic/extra/helpers.css
 ; Print stylesheet
 stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
 
-; --------------
-; CSS FRAMEWORKS
-; --------------
-
+; UIKit
 stylesheets[all][] = thematic/node_modules/uikit/dist/css/uikit.min.css
-stylesheets[all][] = thematic/node_modules/tachyons/css/tachyons.css
-stylesheets[all][] = thematic/node_modules/flexboxgrid/dist/flexboxgrid.css
 
 ; --------------------
 ; PROJECT-SPECIFIC CSS 
