@@ -7,29 +7,24 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
+    <header class="header row" role="banner" uk-grid>
+            <div class="uk-width-1-5">
+                <?php if ($logo): ?>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+                </a>
+                <?php endif; ?>
+            </div>
+            <nav id="nav-1st" class="nav-1st uk-width-3-5">
+                <?php print render($page['nav-1st']); ?>
+            </nav>
+            <nav id="nav-2nd" class="nav-2nd uk-width-1-5">
+                <?php print render($page['nav-2nd']); ?>
+            </nav>
+            <?php print render($page['header']); ?>
+        </header>
 
-<div class="layout-center">
-
-  <header class="header row" role="banner">
-    <div class="col-xs-2">
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
-    <?php endif; ?>
-    </div>
-
-    <nav id="nav-1st" class="nav-1st col-xs-8">
-        <?php print render($page['nav-1st']); ?>
-    </nav>
-
-    <nav id="nav-2nd" class="nav-2nd col-xs-2">
-        <?php print render($page['nav-2nd']); ?>
-    </nav>
-
-    <?php print render($page['header']); ?>
-
-  </header>
-
-  <div class="row">
+<div class="uk-container uk-margin-auto">
 
     <?php
       // Render the sidebars to see if there's anything in them.
@@ -39,15 +34,15 @@
       $content_class = 'col';
       $sidebar_first_class = $sidebar_second_class = '';
       if ($sidebar_first && $sidebar_second):
-        $content_class = 'col-md-6';
-        $sidebar_first_class = 'col-md-3 first-md sidebar-left';
-        $sidebar_second_class = 'col-md-3 last-md sidebar-right';
+        $content_class = 'uk-width-3-5@s';
+        $sidebar_first_class = 'uk-width-1-5@s first-md sidebar-left';
+        $sidebar_second_class = 'uk-width-1-5@s last-md sidebar-right';
       elseif ($sidebar_second):
-        $content_class = 'col-md-9';
-        $sidebar_second_class = 'col-md-3 last-md sidebar-right';
+        $content_class = 'uk-width-4-5@s';
+        $sidebar_second_class = 'uk-width-1-5@s last-md sidebar-right';
       elseif ($sidebar_first):
-        $content_class = 'col-md-9';
-        $sidebar_first_class = 'col-md-3 first-md sidebar-left';
+        $content_class = 'uk-width-4-5@s';
+        $sidebar_first_class = 'uk-width-1-5@s first-md sidebar-left';
       endif;
     ?>
 
@@ -90,7 +85,11 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
+<div id="footer-wrapper">    
+    <div class="uk-container uk-auto-wrap uk-padding">
+        <?php print render($page['footer']); ?>
+  </div>
+</div>
 
 </div>
 
