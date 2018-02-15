@@ -109,6 +109,9 @@ stylesheets[all][] = css/styles.css
 ; stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 ; stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
 
+; IE11 HELPER CSS
+stylesheets-conditional[IE][all][] = thematic/extras/ie11.css
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; JS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
