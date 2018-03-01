@@ -36,5 +36,15 @@
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete",
     "test": "gulp"
+  },
+  "dependencies": {
+    "@webcomponents/custom-elements": "^1.0.8",
+    "clarity-icons": "^0.10.26",
+    "formbase": "^6.0.3",
+    "gutenberg-css": "^0.4.4",
+    "jquery": "^3.3.1",
+    "postcss": "^6.0.19",
+    "sanitize.css": "^5.0.0",
+    "uikit": "^3.0.0-beta.40"
   }
 }
