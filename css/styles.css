@@ -1,9 +1,153 @@
- /**
-  * Custom CSS for project theme 
-  */
-/*---------------------------------------------*/
+/** 
+ *
+ * Global Styles - Forms
+ * 
+ */
 
-h2.block__title, .block__title {
+fieldset {
+  border: 0.05em solid #aaa;
+  border-radius: 0.25em;
+}
+
+legend {
+  padding: 0.5em;
+  font-size: 2em;
+  color: #aaa;
+}
+
+label {
+  margin-bottom: .5em;
+  font-weight: 700;
+}
+
+label,
+label textarea,
+label input,
+label select {
+  display: block;
+}
+
+textarea,
+input,
+select {
+  border: 0px;
+  border-bottom: .05em solid #333;
+  padding: .5em;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: #70bde6;
+}
+
+textarea,
+input {
+  outline: 0;
+  width: 100%;
+}
+
+select {
+  height: 2.25em;
+  width: 100%;
+  border: .05em solid #333;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  width: auto;
+}
+
+input[disabled] {
+  color: #999;
+}
+
+input[type=color] {
+  height: 4em;
+}
+
+.form-addon {
+  background-color: #fff;
+  border-bottom: .1em solid #333;
+  padding: .5em 1em;
+}
+
+/*
+ *
+ * Global Styles - Tables
+ * 
+ * */
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: .5em;
+  text-align: left;
+}
+
+.table tbody>:nth-child(2n-1) {
+  background-color: #e2e5e9;
+}
+
+/*
+ *
+ * Global Styles - Buttons
+ * 
+ * */
+
+button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+input[disabled],
+.btn {
+  width: auto;
+  background-color: #000;
+  color: #FFF;
+  border: 0;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: inline-block;
+  padding: .5em 1.5em;
+  outline: 0;
+  text-align: center;
+}
+
+.btn-sm {
+  padding: .25em .75em;
+}
+
+.btn-lg {
+  padding: 1em 3em;
+}
+
+button[type=submit],
+input[type=submit],
+.btn-primary {
+  background-color: #357edd;
+}
+
+button[disabled],
+input[disabled],
+.btn-primary {
+  background-color: #eee;
+  color: #999;
+}
+
+/**
+ * -----------------------------
+ * PROJECT CSS -----------------
+ * -----------------------------
+ */
+
+h2.block__title,
+.block__title {
   /* Hide block titles by default, in a screen-reader friendly fashion */
   position: absolute !important;
   height: 1px;

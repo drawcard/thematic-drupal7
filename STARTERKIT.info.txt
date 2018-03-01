@@ -66,23 +66,23 @@ stylesheets[all][] = node.css
 ; -------------
 
 ; Theme resets
-stylesheets[all][] = thematic/node_modules/sanitize.css/sanitize.css
+stylesheets[all][] = node_modules/sanitize.css/sanitize.css
 stylesheets[all][] = css/zen-defaults.css
 
 ; Print stylesheet
-stylesheets[print][] = thematic/node_modules/gutenberg-css/dist/gutenberg.css
+stylesheets[print][] = node_modules/gutenberg-css/dist/gutenberg.css
 
 ; UIKit
-stylesheets[all][] = thematic/node_modules/uikit/dist/css/uikit.min.css
+stylesheets[all][] = node_modules/uikit/dist/css/uikit.min.css
 
 ; Project Clarity Icon Set
-stylesheets[all][] = thematic/node_modules/@clr/icons/clr-icons.min.css
+stylesheets[all][] = node_modules/@clr/icons/clr-icons.min.css
 
 ; Initial classes for Drupal
-stylesheets[all][] = thematic/extra/drupal-init.css
+stylesheets[all][] = css/extra/drupal-init.css
 
-; Helper classes
-stylesheets[all][] = thematic/extra/helpers.css
+; Tachyons.io helper classes
+stylesheets[all][] = node_modules/tachyons/src/_aspect-ratios.css
 
 ; --------------------
 ; PROJECT-SPECIFIC CSS 
@@ -91,15 +91,12 @@ stylesheets[all][] = thematic/extra/helpers.css
 ; WEBFONTS
 ; stylesheets[all][] = fonts/path-to-css-stylesheet
 
-; GLOBAL STYLES
-stylesheets[all][] = thematic/base.css
-
 ; SUPERFISH MENU STYLES
 ; Requires 'superfish' module downloaded & enabled
 ; https://www.drupal.org/project/superfish
 stylesheets[all][] = css/superfish.css
 
-; THEME SPECIFIC STYLES
+; GLOBAL + PROJECT SPECIFIC STYLES
 stylesheets[all][] = css/styles.css
 
 ; ------------------
@@ -113,7 +110,7 @@ stylesheets[all][] = css/styles.css
 ; stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
 
 ; IE11 HELPER CSS
-stylesheets-conditional[IE][all][] = thematic/extras/ie11.css
+stylesheets-conditional[IE][all][] = css/extra/ie11.css
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; JS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -124,12 +121,12 @@ stylesheets-conditional[IE][all][] = thematic/extras/ie11.css
 ; ------------
 
 ; Project Clarity Icon Set
-scripts[] = thematic/node_modules/@webcomponents/custom-elements/custom-elements.min.js
-scripts[] = thematic/node_modules/@clr/icons/clr-icons.min.js
+scripts[] = node_modules/@webcomponents/custom-elements/custom-elements.min.js
+scripts[] = node_modules/@clr/icons/clr-icons.min.js
 
 ; UIKit
-scripts[] = thematic/node_modules/uikit/dist/js/uikit.min.js
-scripts[] = thematic/node_modules/uikit/dist/js/uikit-icons.min.js
+scripts[] = node_modules/uikit/dist/js/uikit.min.js
+scripts[] = node_modules/uikit/dist/js/uikit-icons.min.js
 
 ; -------------------
 ; PROJECT-SPECIFIC JS 

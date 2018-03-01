@@ -1,7 +1,7 @@
 {
-  "name": "zen-subtheme",
-  "author": "You!",
-  "description": "The node.js requirements to build this project.",
+  "name": "thematic-drupal7",
+  "author": "Drawcard",
+  "description": "Thematic for Drupal 7",
   "version": "1.0.0",
   "repository": {},
   "devDependencies": {
@@ -45,6 +45,7 @@
     "jquery": "^3.3.1",
     "postcss": "^6.0.19",
     "sanitize.css": "^5.0.0",
+    "tachyons": "^4.9.1",
     "uikit": "^3.0.0-beta.40"
   }
 }

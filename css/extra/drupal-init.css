@@ -1,0 +1,90 @@
+/**
+ * Add aspect ratio settings to items
+ * Examples: http://cssmojo.com/aspect-ratio-using-custom-properties-and-calc/
+ * 
+ * Usage:
+ * <div style="--aspect-ratio:16/9">
+ *      <iframe src="video.mp4" frameborder="0" allowfullscreen></iframe>
+ * </div>
+ * 
+ * Does not work in IE11
+*/
+
+[style*="--aspect-ratio"]> :first-child {
+    width: 100%;
+}
+
+[style*="--aspect-ratio"]>img {
+    height: auto;
+}
+
+@supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+        position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*="--aspect-ratio"]> :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
+
+/*
+ * Hide / show items based on viewport width
+ * Generated at LOTUS: http://goatslacker.github.io/lotus.css/
+ * */
+
+@media (min-width:56em) {
+    .hide-lg {
+        display: none
+    }
+    .show-lg {
+        display: block
+    }
+    .show-md,
+    .show-sm {
+        display: none
+    }
+}
+
+@media (max-width:55em) {
+    .hide-md {
+        display: none
+    }
+    .show-md {
+        display: block
+    }
+    .show-lg,
+    .show-sm {
+        display: none
+    }
+}
+
+@media (max-width:30em) {
+    .hide-sm {
+        display: none
+    }
+    .hide-md,
+    .show-sm {
+        display: block
+    }
+    .show-lg,
+    .show-md {
+        display: none
+    }
+}
+
+/**
+ * Initial classes for Drupal specific usage 
+ */
+
+.logged-in .tabs {
+    /* Add a bit of space around the editor tabs */
+    margin: 20px 0px;
+}
