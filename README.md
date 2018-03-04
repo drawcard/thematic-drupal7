@@ -15,8 +15,7 @@ cd your-theme-name
 [] Activate the theme in Drupal 7:
  * Set up the info file: ```mv STARTERKIT.info.txt your-theme-name.info```
  * Edit the info file accordingly to title your theme, and configure other important settings
- * Go to ```https://your-drupal-site.dev/admin``` and log in
- * Go to ```Appearance``` and activate your sub-theme
+ * Set the theme as default: drush vset theme_default your-theme-name
  
 [] Install required libraries
 In terminal:
