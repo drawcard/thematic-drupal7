@@ -12,12 +12,12 @@ Thematic + Drupal7 + Zen (as a subtheme)
 git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
 cd your-theme-name 
 ```
-[] Activate the theme in Drupal 7:
+[ ] Activate the theme
  * Set up the info file: ```mv STARTERKIT.info.txt your-theme-name.info```
  * Edit the info file accordingly to title your theme, and configure other important settings
- * Set the theme as default: drush vset theme_default your-theme-name
+ * Set the theme as default: ```drush vset theme_default your-theme-name```
  
-[] Install required libraries
+[ ] Install required libraries
 In terminal:
 ```bash
 cd /your-drupal-site/sites/all/libraries
@@ -25,13 +25,13 @@ git clone https://github.com/mehrpadin/Superfish-for-Drupal superfish
 git clone https://github.com/ajaxorg/ace-builds/ ace
 ```
 
-[] Enable required modules
+[ ] Enable required modules
 In terminal:
 ```bash
 drush en superfish ace-editor
 # If prompted to install modules, select Yes
 ```
-[] Module Setup
+[ ] Module Setup
 ### After installation
 * Go to /admin/people/permissions and allow all module settings pages for SuperAdmin & Administrator
 
