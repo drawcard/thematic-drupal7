@@ -27,7 +27,7 @@ git clone https://github.com/ajaxorg/ace-builds/ ../../libraries/ace
 [ ] Enable required modules
 In terminal:
 ```bash
-drush en superfish ace-editor
+drush en superfish ace_editor
 # If prompted to install modules, select Yes
 ```
 [ ] Module Setup
