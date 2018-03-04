@@ -10,7 +10,6 @@ Thematic + Drupal7 + Zen (as a subtheme)
 * Install thematic-drupal7: 
 ```bash
 git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
-git submodule update --init --recursive
 cd your-theme-name 
 ```
 [] Activate the theme in Drupal 7:
