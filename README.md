@@ -7,7 +7,8 @@ Thematic + Drupal7 + Zen (as a subtheme)
  * TIP: install Zen via Drush: ```drush dl zen && drush en zen```
  * verify that Zen is installed to: ```/your-drupal-site/sites/all/themes/zen```
 * Remove the accompanying starter theme folder: ```rm -rf zen/STARTERKIT/```
-* Install thematic-drupal7: 
+* Install thematic-drupal7
+ * :warning: Don't use dashes in your theme folder name - Drupal will ignore the folder!
 ```bash
 git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
 cd your-theme-name 
@@ -27,12 +28,12 @@ git clone https://github.com/ajaxorg/ace-builds/ ../../libraries/ace
 [ ] Enable required modules
 In terminal:
 ```bash
-drush en superfish ace_editor
+drush en superfish ace_editor uikit_components
 # If prompted to install modules, select Yes
 ```
 [ ] Module Setup
 ### After installation
-* Go to /admin/people/permissions and allow all module settings pages for SuperAdmin & Administrator
+* Ensure your user account is set to SuperAdmin & Administrator to use all modules
 
 ### Ace Editor
 * Go to /admin/config/content/ace-editor
