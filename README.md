@@ -20,7 +20,6 @@ cd your-theme-name
 [ ] Install required libraries
 In terminal:
 ```bash
-cd /your-drupal-site/sites/all/libraries
 git clone https://github.com/mehrpadin/Superfish-for-Drupal ../../libraries/superfish
 git clone https://github.com/ajaxorg/ace-builds/ ../../libraries/ace
 ```
