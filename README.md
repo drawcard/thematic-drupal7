@@ -2,10 +2,11 @@
 Thematic + Drupal7 + Zen (as a subtheme)
 
 # Setting up in Drupal
+* cd to your theme directory: ```cd /your-drupal-site/sites/all/themes/```
 * [Install Drupal Zen](https://www.drupal.org/docs/7/themes/zen/installing-zen) 
  * TIP: install Zen via Drush: ```drush dl zen && drush en zen```
  * verify that Zen is installed to: ```/your-drupal-site/sites/all/themes/zen```
-* Remove the accompanying starter theme folder: ```cd /your-drupal-site/sites/all/themes/zen && rm -rf STARTERKIT/```
+* Remove the accompanying starter theme folder: ```rm -rf zen/STARTERKIT/```
 * Install thematic-drupal7: 
 ```bash
 cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
