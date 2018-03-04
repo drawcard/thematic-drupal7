@@ -9,7 +9,7 @@ Thematic + Drupal7 + Zen (as a subtheme)
 * Remove the accompanying starter theme folder: ```rm -rf zen/STARTERKIT/```
 * Install thematic-drupal7: 
 ```bash
-cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
+git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
 git submodule update --init --recursive
 cd your-theme-name 
 ```
