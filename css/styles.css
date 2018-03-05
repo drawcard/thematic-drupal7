@@ -204,6 +204,14 @@ small,
   display: block;
 }
 
+.front .page-title {
+  display: none;
+}
+
+header {
+  margin-top: 20px;
+}
+
 /**
  * -----------------------------
  * PROJECT CSS -----------------
