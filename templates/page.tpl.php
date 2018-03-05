@@ -25,7 +25,7 @@
         </header>
 
 <div class="uk-container uk-margin-auto">
-
+  <div uk-grid>
     <?php
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
@@ -34,14 +34,14 @@
       $content_class = 'col';
       $sidebar_first_class = $sidebar_second_class = '';
       if ($sidebar_first && $sidebar_second):
-        $content_class = 'uk-width-3-5@s';
+        $content_class = 'uk-width-expand';
         $sidebar_first_class = 'uk-width-1-5@s first-md sidebar-left';
         $sidebar_second_class = 'uk-width-1-5@s last-md sidebar-right';
       elseif ($sidebar_second):
-        $content_class = 'uk-width-4-5@s';
+        $content_class = 'uk-width-expand';
         $sidebar_second_class = 'uk-width-1-5@s last-md sidebar-right';
       elseif ($sidebar_first):
-        $content_class = 'uk-width-4-5@s';
+        $content_class = 'uk-width-expand';
         $sidebar_first_class = 'uk-width-1-5@s first-md sidebar-left';
       endif;
     ?>
@@ -88,9 +88,9 @@
 <div id="footer-wrapper">    
     <div class="uk-container uk-auto-wrap uk-padding">
         <?php print render($page['footer']); ?>
-  </div>
+    </div>
 </div>
-
+</div>
 </div>
 
 <?php print render($page['bottom']); ?>
