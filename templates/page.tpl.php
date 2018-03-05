@@ -86,7 +86,7 @@
   </div>
 
 <div id="footer-wrapper">    
-    <div class="uk-container uk-auto-wrap uk-padding">
+    <div class="uk-container uk-auto-wrap uk-padding" uk-grid>
         <?php print render($page['footer']); ?>
     </div>
 </div>
