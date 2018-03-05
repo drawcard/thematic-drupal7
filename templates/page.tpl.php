@@ -7,7 +7,8 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-    <header class="header row" role="banner" uk-grid>
+<div class="uk-container">
+    <header class="header row uk-container" role="banner">
             <div class="uk-width-1-5">
                 <?php if ($logo): ?>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo">
@@ -23,6 +24,7 @@
             </nav>
             <?php print render($page['header']); ?>
         </header>
+    </div>
 
 <div class="uk-container uk-margin-auto">
   <div uk-grid>
@@ -52,7 +54,7 @@
       <a href="#skip-link" class="visually-hidden visually-hidden--focusable" id="main-content">Back to top</a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
+        <h1 class="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
