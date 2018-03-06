@@ -2,39 +2,38 @@
 Thematic + Drupal7 + Zen (as a subtheme)
 
 # Setting up in Drupal
+* cd to your theme directory: ```cd /your-drupal-site/sites/all/themes/```
 * [Install Drupal Zen](https://www.drupal.org/docs/7/themes/zen/installing-zen) 
  * TIP: install Zen via Drush: ```drush dl zen && drush en zen```
  * verify that Zen is installed to: ```/your-drupal-site/sites/all/themes/zen```
-* Remove the accompanying starter theme folder: ```cd /your-drupal-site/sites/all/themes/zen && rm -rf STARTERKIT/```
-* Install thematic-drupal7: 
+* Remove the accompanying starter theme folder: ```rm -rf zen/STARTERKIT/```
+* Install thematic-drupal7
+ * :warning: Don't use dashes in your theme folder name - Drupal will ignore the folder!
 ```bash
-cd .. ; git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
-git submodule update --init --recursive
+git submodule add https://github.com/drawcard/thematic-drupal7/ your-theme-name
 cd your-theme-name 
 ```
-[] Activate the theme in Drupal 7:
+[ ] Activate the theme
  * Set up the info file: ```mv STARTERKIT.info.txt your-theme-name.info```
  * Edit the info file accordingly to title your theme, and configure other important settings
- * Go to ```https://your-drupal-site.dev/admin``` and log in
- * Go to ```Appearance``` and activate your sub-theme
+ * Set the theme as default: ```drush vset theme_default your-theme-name```
  
-[] Install required libraries
+[ ] Install required libraries
 In terminal:
 ```bash
-cd /your-drupal-site/sites/all/libraries
-git clone https://github.com/mehrpadin/Superfish-for-Drupal superfish
-git clone https://github.com/ajaxorg/ace-builds/ ace
+git clone https://github.com/mehrpadin/Superfish-for-Drupal ../../libraries/superfish
+git clone https://github.com/ajaxorg/ace-builds/ ../../libraries/ace
 ```
 
-[] Enable required modules
+[ ] Enable required modules
 In terminal:
 ```bash
-drush en superfish ace-editor
+drush en superfish ace_editor uikit_components
 # If prompted to install modules, select Yes
 ```
-[] Module Setup
+[ ] Module Setup
 ### After installation
-* Go to /admin/people/permissions and allow all module settings pages for SuperAdmin & Administrator
+* Ensure your user account is set to SuperAdmin & Administrator to use all modules
 
 ### Ace Editor
 * Go to /admin/config/content/ace-editor
