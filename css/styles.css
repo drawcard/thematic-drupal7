@@ -194,6 +194,52 @@ small,
 
 /**
  * 
+ * Global styles - colour classes
+ * 
+ */
+
+.cc1-bg {
+  background-color: var(--cc1);
+}
+
+.cc2-bg {
+  background-color: var(--cc2);
+}
+
+.cc3-bg {
+  background-color: var(--cc3);
+}
+
+.cc4-bg {
+  background-color: var(--cc4);
+}
+
+.cc5-bg {
+  background-color: var(--cc5);
+}
+
+.cc1-fg {
+  color: var(--cc1);
+}
+
+.cc2-fg {
+  color: var(--cc2);
+}
+
+.cc3-fg {
+  color: var(--cc3);
+}
+
+.cc4-fg {
+  color: var(--cc4);
+}
+
+.cc5-fg {
+  color: var(--cc5);
+}
+
+/**
+ * 
  * Global styles - misc
  * 
  */
