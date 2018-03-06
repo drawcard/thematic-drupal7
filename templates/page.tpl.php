@@ -7,8 +7,8 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-<div class="uk-container">
-    <header class="header row uk-container" role="banner">
+<header role="banner">
+       <div class="uk-container">
             <div class="uk-width-1-5">
                 <?php if ($logo): ?>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo">
@@ -23,8 +23,8 @@
                 <?php print render($page['nav-2nd']); ?>
             </nav>
             <?php print render($page['header']); ?>
-        </header>
-    </div>
+        </div>
+</header>
 
 <div class="uk-container uk-margin-auto">
   <div uk-grid>
