@@ -194,6 +194,7 @@ input[disabled],
 
 html {
     font-size: 1.125rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-family: var(--font-stack-p);
 }
 
@@ -252,6 +253,7 @@ uk-h3,
 uk-h4,
 uk-h5,
 uk-h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: var(--font-stack-h);
 }
 
