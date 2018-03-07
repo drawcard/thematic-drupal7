@@ -350,7 +350,7 @@ h6 {
 }
 
 .white-fg,
-inverse {
+.inverse {
     color: #8FC650;
     color: var(--white);
 }
