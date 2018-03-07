@@ -1,0 +1,367 @@
+/**
+ * -----------------------------
+ * PROJECT CSS -----------------
+ * Global styling --------------
+ * -----------------------------
+ */
+
+/**
+ * CSS Variables
+ * (note: fallbacks for IE11 are written above variable references below - be sure to update these too, via find and replace!)
+ * Or use a tool like https://github.com/pmburov/css-vars-fallback
+ */
+
+:root {
+    /* Primary colour */
+    --cc1: royalblue;
+    /* Secondary colour */
+    --cc2: turquoise;
+    /* Tertiary colour */
+    --cc3: red;
+    --cc4: purple;
+    --cc5: orange;
+    --cc6: lime;
+    --darkergrey: #212529;
+    --darkgrey: #495057;
+    --grey: #ced4da;
+    --lightgrey: #dee2e6;
+    --lightergrey: #f1f3f5;
+    /* Headings font stack */
+    --font-stack-h: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Paragraphs font stack */
+    --font-stack-p: Georgia, "Times New Roman", Times, serif;
+}
+
+/**
+ *
+ * Global Styles - Forms
+ *
+ */
+
+fieldset {
+    border: 0.05em solid #ced4da;
+    border: 0.05em solid var(--grey);
+    border-radius: 0.25em;
+}
+
+legend {
+    padding: 0.5em;
+    font-size: 2em;
+    color: #ced4da;
+    color: var(--grey);
+}
+
+label {
+    margin-bottom: .5em;
+    font-weight: 700;
+}
+
+label,
+label textarea,
+label input,
+label select {
+    display: block;
+}
+
+textarea,
+input,
+select {
+    border: 0px;
+    border-bottom: .05em solid #212529;
+    border-bottom: .05em solid var(--darkergrey);
+    padding: .5em;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    border-color: royalblue;
+    border-color: var(--cc1);
+    ;
+}
+
+textarea,
+input {
+    outline: 0;
+    width: 100%;
+}
+
+select {
+    height: 2.25em;
+    width: 100%;
+    border: .05em solid #212529;
+    border: .05em solid var(--darkergrey);
+}
+
+input[type=checkbox],
+input[type=radio] {
+    display: inline-block;
+    width: auto;
+}
+
+input[disabled] {
+    color: #ced4da;
+    color: var(--grey);
+}
+
+input[type=color] {
+    height: 4em;
+}
+
+.form-addon {
+    background-color: #fff;
+    border-bottom: .1em solid #212529;
+    border-bottom: .1em solid var(--darkergrey);
+    padding: .5em 1em;
+}
+
+/*
+ *
+ * Global Styles - Tables
+ *
+ * */
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    padding: .5em;
+    text-align: left;
+}
+
+.table tbody>:nth-child(2n-1) {
+    background-color: #f1f3f5;
+    background-color: var(--lightergrey);
+}
+
+/*
+ *
+ * Global Styles - Buttons
+ *
+ * */
+
+button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+input[disabled],
+.btn {
+    width: auto;
+    background-color: #000;
+    color: #FFF;
+    border: 0;
+    border-radius: 0.25em;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5em 1.5em;
+    outline: 0;
+    text-align: center;
+}
+
+.btn-sm {
+    padding: .25em .75em;
+}
+
+.btn-lg {
+    padding: 1em 3em;
+}
+
+button[type=submit],
+input[type=submit],
+.btn-primary {
+    background-color: royalblue;
+    background-color: var(--cc1);
+}
+
+button[disabled],
+input[disabled],
+.btn-primary {
+    background-color: #f1f3f5;
+    background-color: var(--lightergrey);
+    color: #ced4da;
+    color: var(--grey);
+}
+
+/**
+ * 
+ * Global styles - typography
+ * 
+ */
+
+html {
+    font-size: 1.125rem;
+    font-family: var(--font-stack-p);
+}
+
+body {
+    background-color: white;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #212529;
+    color: var(--darkergrey);
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.998rem;
+}
+
+h2 {
+    font-size: 2.827rem;
+}
+
+h3 {
+    font-size: 1.999rem;
+}
+
+h4 {
+    font-size: 1.414rem;
+}
+
+small,
+.font_small {
+    font-size: 0.707rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+uk-h1,
+uk-h2,
+uk-h3,
+uk-h4,
+uk-h5,
+uk-h6 {
+    font-family: var(--font-stack-h);
+}
+
+p,
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/**
+ * 
+ * Global styles - colour system
+ * 
+ */
+
+.cc1-bg {
+    background-color: royalblue;
+    background-color: var(--cc1);
+}
+
+.cc2-bg {
+    background-color: turquoise;
+    background-color: var(--cc2);
+}
+
+.cc3-bg {
+    background-color: red;
+    background-color: var(--cc3);
+}
+
+.cc4-bg {
+    background-color: purple;
+    background-color: var(--cc4);
+}
+
+.cc5-bg {
+    background-color: orange;
+    background-color: var(--cc5);
+}
+
+.cc6-bg {
+    background-color: lime;
+    background-color: var(--cc6);
+}
+
+.cc1-fg {
+    color: royalblue;
+    color: var(--cc1);
+}
+
+.cc2-fg {
+    color: turquoise;
+    color: var(--cc2);
+}
+
+.cc3-fg {
+    color: red;
+    color: var(--cc3);
+}
+
+.cc4-fg {
+    color: purple;
+    color: var(--cc4);
+}
+
+.cc5-fg {
+    color: orange;
+    color: var(--cc5);
+}
+
+.cc6-fg {
+    color: lime;
+    color: var(--cc6);
+}
+
+/**
+ * 
+ * Global styles - misc
+ * 
+ */
+
+.footer-img {
+    max-width: 150px;
+    opacity: 0.5;
+    display: block;
+}
+
+.front .page-title {
+    display: none;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h2.block__title,
+.block__title {
+    /* Hide block titles by default, in a screen-reader friendly fashion */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    word-wrap: normal;
+}

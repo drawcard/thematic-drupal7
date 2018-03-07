@@ -96,8 +96,9 @@ stylesheets[all][] = node_modules/tachyons/src/_aspect-ratios.css
 ; https://www.drupal.org/project/superfish
 stylesheets[all][] = css/superfish.css
 
-; GLOBAL + PROJECT SPECIFIC STYLES
-stylesheets[all][] = css/styles.css
+; GLOBAL + PAGE SPECIFIC STYLES
+stylesheets[all][] = css/global.css
+stylesheets[all][] = css/page.css
 
 ; ------------------
 ; IE CONDITIONAL CSS
