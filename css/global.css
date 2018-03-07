@@ -26,6 +26,8 @@
     --grey: #ced4da;
     --lightgrey: #dee2e6;
     --lightergrey: #f1f3f5;
+    --white: #FFFFFF;
+    --black: #000000;
     /* Headings font stack */
     --font-stack-h: "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* Paragraphs font stack */
@@ -307,6 +309,16 @@ h6 {
     background-color: var(--cc6);
 }
 
+.white-bg {
+    background-color: #8FC650;
+    background-color: var(--white);
+}
+
+.black-bg {
+    background-color: #8FC650;
+    background-color: var(--black);
+}
+
 .cc1-fg {
     color: royalblue;
     color: var(--cc1);
@@ -335,6 +347,17 @@ h6 {
 .cc6-fg {
     color: lime;
     color: var(--cc6);
+}
+
+.white-fg,
+inverse {
+    color: #8FC650;
+    color: var(--white);
+}
+
+.black-fg {
+    color: #8FC650;
+    color: var(--black);
 }
 
 /**
