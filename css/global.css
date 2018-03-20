@@ -212,6 +212,10 @@ p {
     margin-bottom: 1.3rem;
 }
 
+em {
+    color: inherit;
+}
+
 h1,
 h2,
 h3,
