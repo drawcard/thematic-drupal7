@@ -213,7 +213,7 @@ p {
 }
 
 em {
-    color: inherit;
+    color: initial;
 }
 
 h1,
