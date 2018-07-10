@@ -100,18 +100,8 @@ stylesheets[all][] = css/superfish.css
 stylesheets[all][] = css/global.css
 stylesheets[all][] = css/page.css
 
-; ------------------
-; IE CONDITIONAL CSS
-; ------------------
-
-; If you wish to use conditional stylesheets, you should install the
-; conditional stylesheets module: https://drupal.org/project/conditional_styles
-;
-; stylesheets-conditional[lte IE 8][all][] = css/ie8.css
-; stylesheets-conditional[(gte IE 9)|(gt IEMobile 7)|(!IE)][] = css/styles.css
-
-; IE11 HELPER CSS
-stylesheets-conditional[IE][all][] = css/extra/ie11.css
+; IE11 CONDITIONAL STYLESHEETS
+; These are already referenced in html.tpl.php.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; JS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
