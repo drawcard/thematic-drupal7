@@ -394,3 +394,10 @@ h2.block__title,
     clip: rect(1px, 1px, 1px, 1px);
     word-wrap: normal;
 }
+
+/* KEEP THIS AT THE BOTTOM OF THE STYLESHEET */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  
+}
