@@ -100,8 +100,8 @@ stylesheets[all][] = css/superfish.css
 stylesheets[all][] = css/global.css
 stylesheets[all][] = css/page.css
 
-; IE11 CONDITIONAL STYLESHEETS
-; These are already referenced in html.tpl.php.
+; IE10/IE11 CONDITIONAL STYLESHEETS
+; Refer to the footer of css/globals.css for instructions.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; JS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
