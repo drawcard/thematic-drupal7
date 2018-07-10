@@ -20,9 +20,6 @@
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
-    <!--[if IE]>
-    <link type="text/css" rel="stylesheet" href="../css/extra/ie11.css" />
-  <![endif]-->
   <?php if ($add_html5_shim): ?>
     <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5shiv.min.js"></script>
