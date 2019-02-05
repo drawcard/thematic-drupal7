@@ -38,14 +38,14 @@
     "test": "gulp"
   },
   "dependencies": {
-    "@webcomponents/custom-elements": "^1.0.8",
-    "clarity-icons": "^0.10.26",
-    "formbase": "^6.0.3",
-    "gutenberg-css": "^0.4.4",
+    "@webcomponents/custom-elements": "^1.2.1",
+    "clarity-icons": "^0.10.28",
+    "formbase": "^6.0.4",
+    "gutenberg-css": "^0.4.7",
     "jquery": "^3.3.1",
-    "postcss": "^6.0.19",
+    "postcss": "^6.0.23",
     "sanitize.css": "^5.0.0",
-    "tachyons": "^4.9.1",
+    "tachyons": "^4.11.1",
     "uikit": "^3.0.3"
   }
 }
